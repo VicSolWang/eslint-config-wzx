@@ -12,7 +12,7 @@ module.exports = {
 	rules: {
 		'function-paren-newline': 'off',
 		indent: ['error', 'tab'],
-		'implicit-arrow-linebreak': ['error', 'below'],
+		'implicit-arrow-linebreak': 'off',
 		'no-console': [
 			'error',
 			{

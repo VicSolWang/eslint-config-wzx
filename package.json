@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-wzx",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "The custom eslint rules based on airbnb",
 	"main": "index.js",
 	"scripts": {
