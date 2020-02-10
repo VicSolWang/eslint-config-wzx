@@ -10,7 +10,9 @@ module.exports = {
 	},
 	extends: 'eslint-config-airbnb-base',
 	rules: {
+		'function-paren-newline': 'off',
 		indent: ['error', 'tab'],
+		'implicit-arrow-linebreak': ['error', 'below'],
 		'no-console': [
 			'error',
 			{
