@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-wzx",
-	"version": "0.0.5",
-	"description": "The custom eslint rules based on airbnb",
+	"version": "0.1.0",
+	"description": "The custom eslint rules based on airbnb-base",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint *.js",
@@ -15,7 +15,7 @@
 		"eslint",
 		"eslintconfig",
 		"wzx",
-		"airbnb"
+		"airbnb-base"
 	],
 	"author": "VicSolWang",
 	"license": "MIT",
@@ -24,14 +24,8 @@
 	},
 	"homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
 	"dependencies": {
-		"babel-eslint": "^10.0.3",
 		"eslint": "^6.8.0",
-		"eslint-config-airbnb": "^18.0.1",
-		"eslint-config-airbnb-base": "^14.0.0",
-		"eslint-plugin-babel": "^5.3.0",
-		"eslint-plugin-import": "^2.20.1",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-react": "^7.18.3"
+		"eslint-config-airbnb-base": "^14.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^8.3.5",
