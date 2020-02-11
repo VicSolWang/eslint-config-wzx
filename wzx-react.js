@@ -45,5 +45,6 @@ module.exports = {
 		],
 		'react/no-array-index-key': 'off',
 		'react/no-did-update-set-state': 'off',
+		'react/static-property-placement': ['error', 'static public field'],
 	},
 };

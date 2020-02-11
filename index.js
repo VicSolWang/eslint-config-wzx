@@ -20,5 +20,11 @@ module.exports = {
 			},
 		],
 		'no-tabs': 'off',
+		'object-curly-newline': [
+			'error',
+			{
+				consistent: true,
+			},
+		],
 	},
 };
