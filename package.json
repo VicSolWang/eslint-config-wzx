@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint *.js",
-		"prettify": "prettier --write *.js"
+		"prettify": "prettier --write *.js",
+		"test": "npm run lint"
 	},
 	"repository": {
 		"type": "git",
