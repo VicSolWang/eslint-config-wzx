@@ -6,7 +6,8 @@
 	"scripts": {
 		"lint": "eslint *.js",
 		"prettify": "prettier --write *.js",
-		"test": "npm run lint && ava"
+		"test": "npm run lint && nyc ava",
+		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov"
 	},
 	"repository": {
 		"type": "git",
@@ -35,6 +36,7 @@
 		"ava": "^3.3.0",
 		"husky": "^4.2.1",
 		"lint-staged": "^10.0.7",
+		"nyc": "^15.0.0",
 		"prettier": "^1.19.1"
 	}
 }
