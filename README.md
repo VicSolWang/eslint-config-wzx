@@ -18,7 +18,6 @@ Add eslint-config-wzx to the "extends" in your .eslintrc.* file.
     {
         "extends": "eslint-config-wzx"
     }
-}
 
 # License
 
