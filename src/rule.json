@@ -5,6 +5,7 @@
 	"extends": "eslint-config-airbnb-base",
 	"rules": {
 		"function-paren-newline": "off",
+		"global-require": "off",
 		"indent": [
 			"error",
 			"tab"
@@ -19,6 +20,7 @@
 				]
 			}
 		],
+		"no-nested-ternary": "off",
 		"no-tabs": "off",
 		"object-curly-newline": [
 			"error",
