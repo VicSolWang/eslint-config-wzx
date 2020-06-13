@@ -3,6 +3,9 @@
 	"version": "0.1.6",
 	"description": "The custom eslint rules based on airbnb-base",
 	"main": "index.js",
+	"engines": {
+		"node": ">=10"
+	},
 	"scripts": {
 		"lint": "eslint *.js",
 		"prettify": "prettier --write *.js",
