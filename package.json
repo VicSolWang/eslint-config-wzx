@@ -1,13 +1,15 @@
 {
 	"name": "eslint-config-wzx",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "The custom eslint rules based on airbnb-base",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint *.js",
 		"prettify": "prettier --write *.js",
 		"test": "npm run lint && nyc ava",
-		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov"
+		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
+		"lint-staged": "lint-staged",
+		"commitlint": "commitlint -E HUSKY_GIT_PARAMS"
 	},
 	"repository": {
 		"type": "git",
@@ -26,17 +28,17 @@
 	},
 	"homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
 	"dependencies": {
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb-base": "^14.0.0",
-		"eslint-plugin-import": "^2.20.1"
+		"eslint": "^7.2.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-plugin-import": "^2.21.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^8.3.5",
 		"@commitlint/config-conventional": "^8.3.4",
-		"ava": "^3.3.0",
-		"husky": "^4.2.1",
-		"lint-staged": "^10.0.7",
-		"nyc": "^15.0.0",
-		"prettier": "^1.19.1"
+		"ava": "^3.8.2",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.9",
+		"nyc": "^15.1.0",
+		"prettier": "^2.0.5"
 	}
 }
