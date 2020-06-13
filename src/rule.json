@@ -3,15 +3,25 @@
 		"browser": true
 	},
 	"extends": "eslint-config-airbnb-base",
+	"plugins": [
+		"import"
+	],
 	"rules": {
 		"function-paren-newline": "off",
 		"global-require": "off",
+		"implicit-arrow-linebreak": "off",
+		"import/no-dynamic-require": "off",
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true
+			}
+		],
 		"indent": [
 			"error",
 			"tab"
 		],
-		"implicit-arrow-linebreak": "off",
-		"import/no-dynamic-require": "off",
+		"no-bitwise": "off",
 		"no-console": [
 			"error",
 			{
@@ -22,6 +32,12 @@
 			}
 		],
 		"no-nested-ternary": "off",
+		"no-param-reassign": "off",
+		"no-restricted-syntax": [
+			"error",
+			"BinaryExpression[operator='in']"
+		],
+		"no-script-url": "off",
 		"no-tabs": "off",
 		"object-curly-newline": [
 			"error",

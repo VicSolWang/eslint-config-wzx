@@ -10,8 +10,11 @@ const rule = require('./index');
 
 const isObject = (obj) => typeof obj === 'object' && obj !== null;
 
+const isArray = (array) => Array.isArray(array);
+
 test('Test basic properties of config.', (t) => {
 	t.true(isObject(rule.env));
+	t.true(isArray(rule.plugins));
 	t.true(isObject(rule.rules));
 });
 
