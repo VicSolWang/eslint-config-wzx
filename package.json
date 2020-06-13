@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-wzx",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "The custom eslint rules based on airbnb-base",
 	"main": "index.js",
 	"engines": {
@@ -12,7 +12,7 @@
 		"test": "npm run lint && nyc ava",
 		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
 		"lint-staged": "lint-staged",
-		"commitlint": "commitlint -E HUSKY_GIT_PARAMS"
+		"commit-lint": "commitlint -E HUSKY_GIT_PARAMS"
 	},
 	"repository": {
 		"type": "git",
