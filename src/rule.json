@@ -11,6 +11,7 @@
 			"tab"
 		],
 		"implicit-arrow-linebreak": "off",
+		"import/no-dynamic-require": "off",
 		"no-console": [
 			"error",
 			{
