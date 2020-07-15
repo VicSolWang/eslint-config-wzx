@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-wzx",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "The custom eslint rules based on airbnb-base",
 	"main": "index.js",
 	"engines": {
@@ -31,16 +31,16 @@
 	},
 	"homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
 	"dependencies": {
-		"eslint": "^7.2.0",
+		"eslint": "^7.3.1",
 		"eslint-config-airbnb-base": "^14.2.0",
 		"eslint-plugin-import": "^2.21.2"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^8.3.5",
-		"@commitlint/config-conventional": "^8.3.4",
-		"ava": "^3.8.2",
+		"@commitlint/cli": "^9.0.1",
+		"@commitlint/config-conventional": "^9.0.1",
+		"ava": "^3.9.0",
 		"husky": "^4.2.5",
-		"lint-staged": "^10.2.10",
+		"lint-staged": "^10.2.11",
 		"nyc": "^15.1.0",
 		"prettier": "^2.0.5"
 	}
