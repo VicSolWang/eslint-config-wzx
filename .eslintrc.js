@@ -1,9 +1,9 @@
 /**
- * Created by VicSolWang.
- * Date: 2020-02-01 0:35
+ * Created by VICSOLWANG.
+ * Date: 2020/02/01 0:35
  * Email: vic.sol.wang@gmail.com
  */
 
-const rule = require('./src/rule');
+const rule = require('./src/rule.json');
 
 module.exports = rule;
