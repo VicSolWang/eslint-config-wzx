@@ -1,47 +1,51 @@
 {
-	"name": "eslint-config-wzx",
-	"version": "0.1.8",
-	"description": "The custom eslint rules based on airbnb-base",
-	"main": "index.js",
-	"engines": {
-		"node": ">=10"
-	},
-	"scripts": {
-		"lint": "eslint *.js",
-		"prettify": "prettier --write *.js",
-		"test": "npm run lint && nyc ava",
-		"cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
-		"lint-staged": "lint-staged",
-		"commit-lint": "commitlint -E HUSKY_GIT_PARAMS"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/VicSolWang/eslint-config-wzx.git"
-	},
-	"keywords": [
-		"eslint",
-		"eslintconfig",
-		"wzx",
-		"airbnb-base"
-	],
-	"author": "VicSolWang",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/VicSolWang/eslint-config-wzx/issues"
-	},
-	"homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
-	"dependencies": {
-		"eslint": "^7.3.1",
-		"eslint-config-airbnb-base": "^14.2.0",
-		"eslint-plugin-import": "^2.21.2"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^9.0.1",
-		"@commitlint/config-conventional": "^9.0.1",
-		"ava": "^3.9.0",
-		"husky": "^4.2.5",
-		"lint-staged": "^10.2.11",
-		"nyc": "^15.1.0",
-		"prettier": "^2.0.5"
-	}
+  "name": "eslint-config-wzx",
+  "version": "0.2.0",
+  "description": "The custom eslint rules based on airbnb-base",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "lint:prettier": "prettier --check **/*.{js,json}",
+    "lint:eslint": "eslint --ext .js .",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lintfix": "prettier --write --list-different **/*.{js,json} && npm run lint:eslint -- --fix",
+    "test": "npm run lint && nyc ava",
+    "cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
+    "husky:pre-commit": "husky add .husky/pre-commit \"npx lint-staged\"",
+    "husky:commit-msg": "husky add .husky/commit-msg \"npx --no-install commitlint --edit $1\"",
+    "prepare": "husky install && npm run husky:pre-commit && npm run husky:commit-msg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VicSolWang/eslint-config-wzx.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "wzx",
+    "airbnb-base"
+  ],
+  "author": "VICSOLWANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VicSolWang/eslint-config-wzx/issues"
+  },
+  "homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
+  "dependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "ava": "^3.15.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "nyc": "^15.1.0",
+    "prettier": "^2.5.1"
+  }
 }

@@ -6,7 +6,7 @@
 [![codecov](https://codecov.io/gh/VicSolWang/eslint-config-wzx/branch/master/graph/badge.svg)](https://codecov.io/gh/VicSolWang/eslint-config-wzx)
 [![NPM downloads](https://img.shields.io/npm/dt/eslint-config-wzx)](https://www.npmjs.com/package/eslint-config-wzx)
 
-The custom eslint rules based on airbnb-base
+The custom eslint rules based on airbnb-base.
 
 # Installation
 
