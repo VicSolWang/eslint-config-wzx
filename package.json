@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-wzx",
-  "version": "0.3.1",
-  "description": "The custom eslint rules based on airbnb-base",
+  "version": "0.3.2",
+  "description": "The custom eslint rules based on airbnb-base. (Support Typescript Eslint)",
   "main": "index.js",
   "engines": {
     "node": ">=12"
@@ -25,7 +25,9 @@
     "eslint",
     "eslintconfig",
     "wzx",
-    "airbnb-base"
+    "airbnb-base",
+    "typescript",
+    "prettier"
   ],
   "author": "VICSOLWANG",
   "license": "MIT",
