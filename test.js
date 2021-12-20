@@ -6,20 +6,29 @@
 
 const test = require('ava');
 const { ESLint } = require('eslint');
-const rule = require('./index');
+const config = require('./index');
 
 const isObject = (obj) => typeof obj === 'object' && obj !== null;
-
 const isArray = (array) => Array.isArray(array);
 
 test('Test basic properties of config.', (t) => {
-  t.true(isArray(rule.plugins));
-  t.true(isObject(rule.rules));
+  t.true(
+    isArray(config.extends) && config.extends.indexOf('airbnb-base') !== -1,
+  );
+  t.true(isArray(config.plugins));
+  t.true(isObject(config.rules));
+  if (config.overrides && config.overrides.length > 0) {
+    const overrideConfig = config.overrides[0] || {};
+    t.true(
+      isArray(overrideConfig.extends) &&
+        overrideConfig.extends.indexOf('airbnb-typescript/base') !== -1,
+    );
+  }
 });
 
 test('Load config in eslint to validate all rule syntax is correct.', async (t) => {
   const eslint = new ESLint();
-  const code = 'const foo = 1;\nconst bar = () => {};\nbar(foo);\n';
+  const code = 'const a = 1;\nconst b = () => {};\nb(a);\n';
   const results = await eslint.lintText(code);
   t.is(((results || [])[0] || {}).errorCount, 0);
 });
