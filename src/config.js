@@ -21,7 +21,6 @@ try {
   require('typescript');
   require('@typescript-eslint/parser');
   require('@typescript-eslint/eslint-plugin');
-  require('eslint-config-airbnb-typescript');
   config.overrides = [
     {
       files: ['*.ts', '*.tsx'],
@@ -32,7 +31,9 @@ try {
     },
   ];
 } catch (err) {
-  console.error(err);
+  console.info(
+    'Note: Typescript eslint needs to install typescript, @typescript-eslint/parser, @typescript-eslint/eslint-plugin.',
+  );
 }
 
 module.exports = config;
