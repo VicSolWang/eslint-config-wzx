@@ -6,7 +6,6 @@
 
 const config = {
   extends: ['airbnb-base', 'prettier'],
-  plugins: ['import'],
   rules: {
     'global-require': 'warn',
     'import/no-dynamic-require': 'warn',
