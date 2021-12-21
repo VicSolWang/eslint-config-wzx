@@ -23,7 +23,7 @@ try {
   config.overrides = [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['airbnb-typescript/base', 'prettier'],
+      extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
       parserOptions: {
         project: './tsconfig.json',
       },
