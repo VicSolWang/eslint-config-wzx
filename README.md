@@ -7,17 +7,17 @@
 [![codecov](https://img.shields.io/codecov/c/gh/VicSolWang/eslint-config-wzx/master?label=codecov&logo=codecov&style=flat-square)](https://codecov.io/gh/VicSolWang/eslint-config-wzx)
 [![NPM downloads](https://img.shields.io/npm/dt/eslint-config-wzx?style=flat-square)](https://www.npmjs.com/package/eslint-config-wzx)
 
-The custom eslint rules based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base). (Support Typescript Eslint)
+> The custom eslint rules based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base). (Support Typescript Eslint)
 
-# Installation
+## :cd: Installation
 
     npm install --save-dev eslint-config-wzx
 
-Note: Typescript eslint needs to install [typescript](https://www.npmjs.com/package/typescript), [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser), [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
+:bulb: Typescript eslint needs to install [typescript](https://www.npmjs.com/package/typescript), [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser), [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
    
     npm install --save-dev typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
-# Usage
+## :rocket: Usage
 
 Add eslint-config-wzx to the "extends" in your `.eslintrc.* file`.
 
@@ -25,8 +25,8 @@ Add eslint-config-wzx to the "extends" in your `.eslintrc.* file`.
       "extends": "wzx"
     }
 
-Note: Typescript eslint needs `tsconfig.json` in your project root directory.
+:bulb: Typescript eslint needs `tsconfig.json` in your project root directory.
 
-# License
+## :lock: License
 
 [MIT](LICENSE).
