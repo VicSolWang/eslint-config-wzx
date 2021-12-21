@@ -1,10 +1,11 @@
 # eslint-config-wzx
 
-[![NPM version](https://img.shields.io/npm/v/eslint-config-wzx)](https://www.npmjs.com/package/eslint-config-wzx)
-[![node](https://img.shields.io/node/v/eslint-config-wzx)](https://nodejs.org)
-[![Build Status](https://travis-ci.com/VicSolWang/eslint-config-wzx.svg?branch=master)](https://travis-ci.com/VicSolWang/eslint-config-wzx)
-[![codecov](https://codecov.io/gh/VicSolWang/eslint-config-wzx/branch/master/graph/badge.svg)](https://codecov.io/gh/VicSolWang/eslint-config-wzx)
-[![NPM downloads](https://img.shields.io/npm/dt/eslint-config-wzx)](https://www.npmjs.com/package/eslint-config-wzx)
+[![NPM version](https://img.shields.io/npm/v/eslint-config-wzx?logo=npm&style=flat-square)](https://www.npmjs.com/package/eslint-config-wzx)
+[![node](https://img.shields.io/node/v/eslint-config-wzx?logo=nodedotjs&style=flat-square)](https://nodejs.org)
+[![Code Style](https://img.shields.io/badge/code%20style-prettier-ff69b4?logo=prettier&style=flat-square)](https://prettier.io)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/VicSolWang/eslint-config-wzx/test-release-ci/master?logo=github&style=flat-square)](https://github.com/VicSolWang/eslint-config-wzx/actions/workflows/main.yml)
+[![codecov](https://img.shields.io/codecov/c/gh/VicSolWang/eslint-config-wzx/master?label=codecov&logo=codecov&style=flat-square)](https://codecov.io/gh/VicSolWang/eslint-config-wzx)
+[![NPM downloads](https://img.shields.io/npm/dt/eslint-config-wzx?style=flat-square)](https://www.npmjs.com/package/eslint-config-wzx)
 
 The custom eslint rules based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base). (Support Typescript Eslint)
 
