@@ -30,9 +30,8 @@ jobs:
       - run: node --version
       - run: npm --version   
       - run: npm install
-      - run: |
-          npm test
-          npm run cover:report
+      - run: npm test
+      - run: npm run cover:report
       - uses: actions/upload-artifact@v2
         with:
           name: coverage
