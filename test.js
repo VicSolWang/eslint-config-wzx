@@ -15,14 +15,19 @@ test('Test basic properties of config.', (t) => {
   t.true(
     isArray(config.extends) && config.extends.indexOf('airbnb-base') !== -1,
   );
-  t.true(isArray(config.plugins));
   t.true(isObject(config.rules));
   if (config.overrides && config.overrides.length > 0) {
     const overrideConfig = config.overrides[0] || {};
     t.true(
       isArray(overrideConfig.extends) &&
+        overrideConfig.extends.indexOf('airbnb-base') !== -1 &&
         overrideConfig.extends.indexOf('airbnb-typescript/base') !== -1,
     );
+    t.true(
+      isObject(overrideConfig.parserOptions) &&
+        overrideConfig.parserOptions.project,
+    );
+    t.true(isObject(overrideConfig.rules));
   }
 });
 
