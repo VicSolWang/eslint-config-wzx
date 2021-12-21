@@ -25,7 +25,7 @@ test('Test basic properties of config.', (t) => {
     );
     t.true(
       isObject(overrideConfig.parserOptions) &&
-        overrideConfig.parserOptions.project,
+        !!overrideConfig.parserOptions.project,
     );
     t.true(isObject(overrideConfig.rules));
   }
