@@ -4,16 +4,18 @@
  * Email: vic.sol.wang@gmail.com
  */
 
+const customRules = {
+  'global-require': 'warn',
+  'import/no-dynamic-require': 'warn',
+  'no-bitwise': 'off',
+  'no-nested-ternary': 'off',
+  'no-script-url': 'warn',
+  'no-underscore-dangle': 'off',
+};
+
 const config = {
   extends: ['airbnb-base', 'prettier'],
-  rules: {
-    'global-require': 'warn',
-    'import/no-dynamic-require': 'warn',
-    'no-bitwise': 'off',
-    'no-nested-ternary': 'off',
-    'no-script-url': 'warn',
-    'no-underscore-dangle': 'off',
-  },
+  rules: customRules,
 };
 
 try {
@@ -27,6 +29,7 @@ try {
       parserOptions: {
         project: './tsconfig.json',
       },
+      rules: customRules,
     },
   ];
 } catch (err) {
