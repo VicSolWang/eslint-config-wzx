@@ -59,6 +59,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: node --version
-        #env:
-         # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: cycjimmy/semantic-release-action@v2
+        id: semantic
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - if: steps.semantic.outputs.new_release_published == 'true'
+        run: echo ${{ steps.semantic.outputs.new_release_version }}
