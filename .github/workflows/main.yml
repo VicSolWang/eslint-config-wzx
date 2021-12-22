@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ matrix.os }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
       - run: node --version
-      - run: npm --version   
+      - run: npm --version
       - run: npm install
       - run: npm test
       - run: npm run cover:report
@@ -38,7 +38,7 @@ jobs:
         with:
           name: coverage
           path: coverage.lcov
-      
+
   codecov:
     runs-on: ubuntu-latest
     needs:
@@ -49,3 +49,16 @@ jobs:
         with:
           name: coverage
       - uses: codecov/codecov-action@v2
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: node --version
+        #env:
+         # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
