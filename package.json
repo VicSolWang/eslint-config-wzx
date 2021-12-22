@@ -15,7 +15,7 @@
     "cover:report": "nyc report --reporter=text-lcov > coverage.lcov",
     "husky:pre-commit": "husky add .husky/pre-commit \"npx lint-staged\"",
     "husky:commit-msg": "husky add .husky/commit-msg \"npx --no-install commitlint --edit $1\"",
-    "prepare": "husky install && npm run husky:pre-commit && npm run husky:commit-msg"
+    "postinstall": "husky install && npm run husky:pre-commit && npm run husky:commit-msg"
   },
   "repository": {
     "type": "git",
