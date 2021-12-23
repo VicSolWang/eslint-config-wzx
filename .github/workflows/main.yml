@@ -59,6 +59,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
+      - run: npm install is-ci
       - uses: cycjimmy/semantic-release-action@v2
         id: semantic
         with:
