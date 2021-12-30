@@ -1,3 +1,10 @@
+## [0.5.3](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.5.2...v0.5.3) (2021-12-30)
+
+
+### Bug Fixes
+
+* update ignore config ([b08b21c](https://github.com/VicSolWang/eslint-config-wzx/commit/b08b21ca7824861e4023482325fb50f6333e2a3c))
+
 ## [0.5.2](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.5.1...v0.5.2) (2021-12-23)
 
 
