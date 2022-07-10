@@ -37,18 +37,18 @@ test('Test the validity of the custom rule.', async (t) => {
   const eslint = new ESLint();
   const results = await eslint.lintFiles(['test/example/rule.js']);
   const result = (results || [])[0] || {};
-  t.is(result.warningCount, 3);
+  t.is(result.warningCount, 5);
   t.is(result.errorCount, 0);
 });
 
 test('Test the support of Typescript eslint.', async (t) => {
   const pluginPath = require.resolve('@typescript-eslint/eslint-plugin');
   const configPath = require.resolve('../src/config');
-  // With Typescript plug
+  // With Typescript plugin
   const eslint1 = new ESLint();
   const results1 = await eslint1.lintFiles(['test/example/type.ts']);
   const result1 = (results1 || [])[0] || {};
-  // Without Typescript plug
+  // Without Typescript plugin
   delete require.cache[pluginPath];
   await fs.remove(path.resolve(pluginPath, '../..'));
   delete require.cache[configPath];
