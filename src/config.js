@@ -7,8 +7,10 @@
 const customRules = {
   'global-require': 'warn',
   'import/no-dynamic-require': 'warn',
+  'import/no-extraneous-dependencies': 'warn',
   'no-bitwise': 'off',
   'no-nested-ternary': 'off',
+  'no-param-reassign': 'warn',
   'no-script-url': 'warn',
   'no-underscore-dangle': 'off',
 };
@@ -29,7 +31,10 @@ try {
       parserOptions: {
         project: './tsconfig.json',
       },
-      rules: customRules,
+      rules: {
+        ...customRules,
+        '@typescript-eslint/no-unused-vars': 'warn',
+      },
     },
   ];
 } catch (err) {
