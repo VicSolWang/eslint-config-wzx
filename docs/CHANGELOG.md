@@ -1,3 +1,11 @@
+# [0.6.0](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.5.3...v0.6.0) (2022-07-10)
+
+
+### Features
+
+* modify rules ([b9b4bc5](https://github.com/VicSolWang/eslint-config-wzx/commit/b9b4bc5fb628b6ddee22b225b18c276abca347fc))
+* update package ([4af6ce6](https://github.com/VicSolWang/eslint-config-wzx/commit/4af6ce6be279ec3bc51610a5c3864a92ec832dcd))
+
 ## [0.5.3](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.5.2...v0.5.3) (2021-12-30)
 
 
