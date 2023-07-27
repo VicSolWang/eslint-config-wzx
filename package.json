@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wzx",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "The custom eslint rules based on airbnb-base. (Support Typescript Eslint)",
   "main": "index.js",
   "engines": {
@@ -37,29 +37,29 @@
   },
   "homepage": "https://github.com/VicSolWang/eslint-config-wzx#readme",
   "dependencies": {
-    "eslint": "^8.19.0",
+    "eslint": "^8.45.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "@typescript-eslint/parser": "^5.30.5",
-    "typescript": "^4.7.4"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "@typescript-eslint/parser": "^5.30.5",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "ava": "^3.15.0",
-    "fs-extra": "^10.1.0",
-    "husky": "^8.0.1",
+    "fs-extra": "^11.1.1",
+    "husky": "^8.0.3",
     "is-ci": "^3.0.1",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.2.3",
     "nyc": "^15.1.0",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
   }
 }
