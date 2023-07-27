@@ -14,7 +14,7 @@ if (a) {
 // 'import/no-dynamic-require': 'warn'
 require(a);
 
-// 'import/no-extraneous-dependencies': 'warn',
+// 'import/no-unresolved': 'warn',
 require('eslint-utils');
 
 // 'no-bitwise': 'off'
