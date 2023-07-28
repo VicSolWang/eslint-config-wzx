@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.7.0...v0.7.1) (2023-07-28)
+
+
+### Bug Fixes
+
+* reduce typescript version ([4811b69](https://github.com/VicSolWang/eslint-config-wzx/commit/4811b69bd693019495c763194396b728e5c069a4))
+
 # [0.7.0](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.6.1...v0.7.0) (2023-07-27)
 
 
