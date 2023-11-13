@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.8.0...v0.8.1) (2023-11-13)
+
+
+### Bug Fixes
+
+* update README.md ([cac4512](https://github.com/VicSolWang/eslint-config-wzx/commit/cac4512374bff97e0d3312f6c18195232674adc1))
+
 # [0.8.0](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.7.1...v0.8.0) (2023-11-13)
 
 
