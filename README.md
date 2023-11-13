@@ -20,11 +20,13 @@
 
 ## :rocket: Usage
 
-Add eslint-config-wzx to the "extends" in your `.eslintrc.* file`.
+Add eslint-config-wzx in your `eslint.config.js`.
 
-    {
-      "extends": "wzx"
-    }
+    import wzx from 'eslint-config-wzx';
+
+    export default [
+      ...wzx,
+    ]
 
 :bulb: Typescript eslint needs `tsconfig.json` in your project root directory.
 
