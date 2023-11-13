@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wzx",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "The custom eslint rules based on airbnb-base. (Support Typescript Eslint)",
   "main": "index.js",
   "files": [
@@ -22,8 +22,7 @@
     "cover:report": "c8 report --reporter=text-lcov > coverage.lcov",
     "husky:pre-commit": "husky add .husky/pre-commit \"npx lint-staged --config=lint-staged.config.js\"",
     "husky:commit-msg": "husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\"",
-    "husky:init": "husky install && npm run husky:pre-commit && npm run husky:commit-msg",
-    "prepare": "npm run husky:init"
+    "husky:init": "husky install && npm run husky:pre-commit && npm run husky:commit-msg"
   },
   "repository": {
     "type": "git",
