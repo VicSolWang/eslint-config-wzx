@@ -20,7 +20,7 @@
 
 ## :rocket: Usage
 
-Add eslint-config-wzx in your `eslint.config.js`.
+Starting from v8.x, we will use the new flat eslint config. Add eslint-config-wzx in your `eslint.config.js`.
 
     import wzx from 'eslint-config-wzx';
 
