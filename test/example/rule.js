@@ -14,6 +14,9 @@ if (a) {
 // 'import/no-dynamic-require': 'warn'
 require(a);
 
+// 'import/no-extraneous-dependencies': 'warn'
+require('espree');
+
 // 'import/no-unresolved': 'warn',
 require('eslint-utils');
 

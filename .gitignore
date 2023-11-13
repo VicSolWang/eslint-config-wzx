@@ -12,11 +12,11 @@ yarn.lock
 # Husky directory
 .husky
 
-# Coverage directory used by tools like istanbul
-coverage*
+# c8 test coverage
+coverage/
 
-# nyc test coverage
-.nyc_output
+# Coverage directory used by tools like istanbul
+coverage.*
 
 # Dependency directories
 node_modules/
@@ -24,6 +24,7 @@ node_modules/
 # IDE / Editor
 .idea
 .vscode
+target/
 
 # macOS
 .DS_Store

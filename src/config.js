@@ -4,44 +4,66 @@
  * Email: vic.sol.wang@gmail.com
  */
 
-const customRules = {
-  'global-require': 'warn',
-  'import/no-dynamic-require': 'warn',
-  'import/no-extraneous-dependencies': 'warn',
-  'import/no-unresolved': 'warn',
-  'no-bitwise': 'off',
-  'no-nested-ternary': 'off',
-  'no-param-reassign': 'warn',
-  'no-script-url': 'warn',
-  'no-underscore-dangle': 'off',
-};
+import { FlatCompat } from '@eslint/eslintrc';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const config = {
-  extends: ['airbnb-base', 'prettier'],
-  rules: customRules,
-};
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+let $config = [...compat.extends('airbnb-base', 'prettier')];
 
 try {
-  require('typescript');
-  require('@typescript-eslint/parser');
-  require('@typescript-eslint/eslint-plugin');
-  config.overrides = [
-    {
-      files: ['*.ts', '*.tsx'],
-      extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
-      parserOptions: {
-        project: './tsconfig.json',
-      },
-      rules: {
-        ...customRules,
-        '@typescript-eslint/no-unused-vars': 'warn',
-      },
-    },
+  await import('typescript');
+  await import('@typescript-eslint/parser');
+  await import('@typescript-eslint/eslint-plugin');
+  $config = [
+    ...$config,
+    ...compat.config({
+      overrides: [
+        {
+          files: ['*.ts', '*.tsx'],
+          extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
+          parserOptions: {
+            project: './tsconfig.json',
+          },
+          rules: {
+            '@typescript-eslint/no-unused-vars': 'warn',
+          },
+        },
+      ],
+    }),
   ];
-} catch (err) {
+} catch (error) {
   console.info(
     'Note: Typescript eslint needs to install typescript, @typescript-eslint/parser, @typescript-eslint/eslint-plugin.',
   );
 }
 
-module.exports = config;
+const config = [
+  ...$config,
+  {
+    rules: {
+      'global-require': 'warn',
+      'import/no-dynamic-require': 'warn',
+      'import/no-extraneous-dependencies': 'warn',
+      'import/no-unresolved': 'warn',
+      'no-bitwise': 'off',
+      'no-nested-ternary': 'off',
+      'no-param-reassign': 'warn',
+      'no-script-url': 'warn',
+      'no-underscore-dangle': 'off',
+    },
+  },
+  {
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+  },
+];
+
+export default config;
