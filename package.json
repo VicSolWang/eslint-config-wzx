@@ -18,7 +18,7 @@
     "lint:eslint": "eslint **/*.{js,ts}",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lintfix": "prettier --write --list-different **/*.{js,ts,json} && npm run lint:eslint -- --fix",
-    "test": "c8 ava",
+    "test": "npm run lint && c8 ava",
     "cover:report": "c8 report --reporter=text-lcov > coverage.lcov",
     "husky:pre-commit": "husky add .husky/pre-commit \"npx lint-staged --config=lint-staged.config.js\"",
     "husky:commit-msg": "husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\"",
