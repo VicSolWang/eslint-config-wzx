@@ -1,3 +1,18 @@
+# [0.8.0](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.7.1...v0.8.0) (2023-11-13)
+
+
+### Features
+
+* add new test rule ([5ed33f8](https://github.com/VicSolWang/eslint-config-wzx/commit/5ed33f87dad4c68dd736c117fd9550383235488f))
+* change the entry file to es module ([567ee1b](https://github.com/VicSolWang/eslint-config-wzx/commit/567ee1b7c2b13f1dc50f379701faddab99180f75))
+* change the test file to es module and use new flat eSLint config to test ([7f7382c](https://github.com/VicSolWang/eslint-config-wzx/commit/7f7382c7035ee0401a2f83e43a4e3cc91269acec))
+* modify engines, scripts, version add attributes such as files and type to package.json ([2df865a](https://github.com/VicSolWang/eslint-config-wzx/commit/2df865acfb39cec0f691908a96e787c7dd6c2119))
+
+
+### Performance Improvements
+
+* use new eslint config ([6112355](https://github.com/VicSolWang/eslint-config-wzx/commit/61123551e1e1b5d78240d5f9348cd92fda15ef8a))
+
 ## [0.7.1](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.7.0...v0.7.1) (2023-07-28)
 
 
