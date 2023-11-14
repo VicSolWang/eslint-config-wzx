@@ -59,7 +59,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm pkg delete scripts.prepare
+      - run: echo ignore-scripts=true >> .npmrc
       - uses: cycjimmy/semantic-release-action@v4
         id: semantic
         with:
