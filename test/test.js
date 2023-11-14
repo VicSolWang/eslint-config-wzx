@@ -47,8 +47,8 @@ test('Test the support of Typescript eslint.', async (t) => {
     const flatESLint1 = new FlatESLint();
     const [result1 = {}] =
       (await flatESLint1.lintFiles(['test/example/type.ts'])) || [];
+    t.is(result1.errorCount, 0);
     // Without Typescript plugin
-    delete require.cache[pluginPath];
     await fs.remove(path.resolve(pluginPath, '../..'));
     const flatESLint2 = new FlatESLint({
       baseConfig: {
@@ -58,7 +58,6 @@ test('Test the support of Typescript eslint.', async (t) => {
     });
     const [result2 = {}] =
       (await flatESLint2.lintFiles('test/example/type.ts')) || [];
-    t.is(result1.errorCount, 0);
     t.is(result2.errorCount, 1);
   } else {
     t.true(true);
