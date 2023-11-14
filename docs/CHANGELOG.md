@@ -1,3 +1,10 @@
+## [0.9.2](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.1...v0.9.2) (2023-11-14)
+
+
+### Bug Fixes
+
+* modify test-release.yml to disable husky in CI ([276939e](https://github.com/VicSolWang/eslint-config-wzx/commit/276939ecc58e40c66641dfe8992ca6b7dba70282))
+
 ## [0.9.1](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.0...v0.9.1) (2023-11-14)
 
 
