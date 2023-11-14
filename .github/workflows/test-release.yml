@@ -31,7 +31,7 @@ jobs:
             ${{ matrix.os }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
       - run: node --version
       - run: npm --version
-      - run: npm install --ignore-scripts
+      - run: npm install
       - run: npm test
       - run: npm run cover:report
       - uses: actions/upload-artifact@v3
@@ -59,7 +59,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: echo ignore-scripts=true >> .npmrc
+      - run: npm install is-ci
       - uses: cycjimmy/semantic-release-action@v4
         id: semantic
         with:
