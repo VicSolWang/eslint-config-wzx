@@ -25,7 +25,7 @@ try {
     ...compat.config({
       overrides: [
         {
-          files: ['*.ts', '*.tsx'],
+          files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
           extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
           parserOptions: {
             project: './tsconfig.json',
