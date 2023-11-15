@@ -1,3 +1,10 @@
+## [0.9.3](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.2...v0.9.3) (2023-11-15)
+
+
+### Bug Fixes
+
+* add overrides file type ([d58d698](https://github.com/VicSolWang/eslint-config-wzx/commit/d58d69840c09b2907ad025fa55c6455c89c722bf))
+
 ## [0.9.2](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.1...v0.9.2) (2023-11-14)
 
 
