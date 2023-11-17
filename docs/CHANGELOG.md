@@ -1,3 +1,10 @@
+## [0.9.4](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.3...v0.9.4) (2023-11-17)
+
+
+### Bug Fixes
+
+* update package.json ([f926078](https://github.com/VicSolWang/eslint-config-wzx/commit/f92607827ef5d798c0d025fdb50fad3b37f7a8d1))
+
 ## [0.9.3](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.2...v0.9.3) (2023-11-15)
 
 
