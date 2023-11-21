@@ -1,3 +1,10 @@
+## [0.9.6](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.5...v0.9.6) (2023-11-21)
+
+
+### Bug Fixes
+
+* run eslint cli add option ([f393bda](https://github.com/VicSolWang/eslint-config-wzx/commit/f393bda5dd454bb5ce47c5b6c7614a0e159be747))
+
 ## [0.9.5](https://github.com/VicSolWang/eslint-config-wzx/compare/v0.9.4...v0.9.5) (2023-11-19)
 
 
