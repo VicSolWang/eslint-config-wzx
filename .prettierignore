@@ -25,6 +25,7 @@ coverage.*
 node_modules/
 
 # IDE / Editor
+.fleet
 .idea
 .vscode
 target/

@@ -28,6 +28,7 @@ node_modules/
 tsconfig.json
 
 # IDE / Editor
+.fleet
 .idea
 .vscode
 target/
