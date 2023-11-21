@@ -5,13 +5,30 @@
  */
 
 export default [
-  '.husky/*',
-  'coverage/*',
+  /* Logs */
+  '/logs',
+  '*.log',
+  'npm-debug.log*',
+  'yarn-debug.log*',
+  'yarn-error.log*',
+  /* Package lock */
+  'package-lock.json',
+  'yarn.lock',
+  /* Husky directory */
+  '.husky',
+  /* c8 test coverage */
+  'coverage/',
+  /* Coverage directory used by tools like istanbul */
   'coverage.*',
-  '.github/*',
-  'node_modules/*',
-  '.idea/*',
-  '.vscode/*',
-  'target/*',
-  '.DS_Store/*',
+  /* Github directory */
+  '.github',
+  /* Dependency directories */
+  'node_modules/',
+  /* IDE / Editor */
+  '.fleet',
+  '.idea',
+  '.vscode',
+  'target/',
+  /* macOS */
+  '.DS_Store',
 ];
