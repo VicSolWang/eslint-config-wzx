@@ -31,6 +31,7 @@ try {
             project: './tsconfig.json',
           },
           rules: {
+            '@typescript-eslint/naming-convention': 'warn',
             '@typescript-eslint/no-unused-vars': 'warn',
           },
         },
@@ -48,14 +49,16 @@ const config = [
   {
     rules: {
       'global-require': 'warn',
-      'import/no-dynamic-require': 'warn',
-      'import/no-extraneous-dependencies': 'warn',
-      'import/no-unresolved': 'warn',
       'no-bitwise': 'off',
       'no-nested-ternary': 'off',
       'no-param-reassign': 'warn',
       'no-script-url': 'warn',
       'no-underscore-dangle': 'off',
+      'import/no-dynamic-require': 'warn',
+      'import/no-extraneous-dependencies': 'warn',
+      'import/no-named-as-default': 'warn',
+      'import/no-named-as-default-member': 'warn',
+      'import/no-unresolved': 'warn',
     },
   },
   {
